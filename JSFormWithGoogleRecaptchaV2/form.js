@@ -84,7 +84,7 @@ function recaptchaCallback() {
   document.getElementById("modalForm").innerHTML +=
     '<div class="recaptcha" id="recaptcha"></div>';
   grecaptcha.render("recaptcha", {
-    sitekey: "6LcrL-gUAAAAANhVP-7NkE5Qx3WPqSuDDxkDXWAn",
+    sitekey: "KEY", //HERE IS SHOULD BE A YOUR FRONTEND PRIVATE KEY
     callback: function () {
     },
   });

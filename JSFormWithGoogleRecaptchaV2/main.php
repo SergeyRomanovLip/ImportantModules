@@ -5,7 +5,7 @@ $recaptcha = $_POST['g-recaptcha-response'];
 
     if(!empty($recaptcha))
         {
-            $secret='6LcrL-gUAAAAAIYUK0zUUJwdUowfBHQIJquvwGqA';
+            $secret='KEY'; //HERE IS SHOULD BE A YOUR SERVER PRIVATE KEY
             $res=file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$recaptcha);
             $res= json_decode($res, true);
 
